@@ -1,0 +1,61 @@
+{
+  "name": "code-linter",
+  "version": "0.0.1",
+  "description": "统一lint代码配置",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm unbuild",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@eslint/compat": "1.2.4",
+    "@eslint/config-inspector": "0.7.1",
+    "@eslint/js": "9.17.0",
+    "@types/eslint__js": "8.42.3",
+    "@typescript-eslint/eslint-plugin": "8.19.1",
+    "@typescript-eslint/parser": "8.19.1",
+    "eslint": "9.17.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-antfu": "2.7.0",
+    "eslint-plugin-i18n-wrap": "0.0.40",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "7.37.3",
+    "eslint-plugin-react-hooks": "5.1.0",
+    "eslint-plugin-unused-imports": "4.1.4",
+    "eslint-plugin-vue": "9.32.0",
+    "globals": "15.14.0",
+    "local-pkg": "0.5.1",
+    "oxlint": "0.15.5",
+    "postcss": "8.4.49",
+    "postcss-html": "1.7.0",
+    "stylelint": "16.12.0",
+    "stylelint-config-property-sort-order-smacss": "10.0.0",
+    "stylelint-config-recommended-vue": "1.5.0",
+    "stylelint-config-standard": "36.0.1",
+    "stylelint-order": "6.0.4",
+    "typescript-eslint": "8.19.1",
+    "vue-eslint-parser": "9.4.3"
+  },
+  "devDependencies": {
+    "@types/eslint": "9.6.1",
+    "@types/node": "22.10.5",
+    "tsx": "4.19.2",
+    "typescript": "5.7.3",
+    "unbuild": "3.2.0",
+    "vue": "3.5.13"
+  }
+}
+

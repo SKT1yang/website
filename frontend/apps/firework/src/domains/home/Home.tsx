@@ -11,7 +11,7 @@ import type { Firework } from "./types";
 import { FireworksProvider } from "../cart/views/CartContext";
 import { CartFloatButton } from "../cart/views/CartFloatButton";
 
-const ITEMS_PER_PAGE = 8;
+const ITEMS_PER_PAGE = 12;
 
 export default function Home() {
   const [filteredFireworks, setFilteredFireworks] =
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           ) : (
             <>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 mt-8">
                 {currentFireworks.map((firework) => (
                   <FireworkCard key={firework.id} firework={firework} />
                 ))}

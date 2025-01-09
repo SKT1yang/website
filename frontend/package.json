@@ -1,12 +1,17 @@
 {
   "name": "forntend",
   "version": "1.0.0",
-  "description": "",
   "private": true,
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "yangguodong",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "yangguodong",
-  "license": "MIT"
+  "prettier": "code-pretty",
+  "dependencies": {
+    "code-pretty": "0.0.1"
+  }
 }
+

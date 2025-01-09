@@ -1,4 +1,5 @@
 import type { Firework } from "../types";
+
 export const fireworks: Firework[] = [
   {
     id: 1,
