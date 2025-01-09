@@ -1,3 +1,9 @@
+/**
+ * ESLint全局模式模块
+ * 提供常用的文件匹配模式，用于配置ESLint规则
+ */
+
+// 源文件相关模式
 export const GLOB_SRC_EXT = '?([cm])[jt]s?(x)'
 export const GLOB_SRC = '**/*.?([cm])[jt]s?(x)'
 

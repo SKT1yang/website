@@ -42,6 +42,9 @@ export const hasVue =
   isPackageExists('nuxt') || // Nuxt 框架
   isPackageExists('vitepress') || // VitePress 文档框架
   isPackageExists('@slidev/cli') // Slidev 幻灯片框架
+
+export const hasReact = isPackageExists('react')
+
 /**
  * 检测项目中是否使用了 Unocss
  * 包括：
