@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import FireworkCard from "./components/FireworkCard";
 import Pagination from "./components/Pagination";

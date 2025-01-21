@@ -1,11 +1,11 @@
 import {
+  type Dispatch,
+  type ReactNode,
   createContext,
   useContext,
   useReducer,
-  type ReactNode,
-  Dispatch,
 } from "react";
-import type { Firework, CartFireworks } from "../../home/types";
+import type { CartFireworks, Firework } from "../../home/types";
 import { getStore, setStore } from "../../home/utils";
 
 const CART_FIREWORKS_KEY = "cart-fireworks";
@@ -98,7 +98,7 @@ function cartFireworksReducer(
       return {};
     }
     default: {
-      throw new Error("未知的 action 类型: " + (action as any).type);
+      throw new Error(`未知的 action 类型: ${  (action as any).type}`);
     }
   }
 }

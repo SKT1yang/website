@@ -6,11 +6,13 @@
   "keywords": [],
   "license": "MIT",
   "author": "yangguodong",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --fix"
   },
   "prettier": "code-pretty",
   "dependencies": {
+    "code-linty": "0.0.2",
     "code-pretty": "0.0.1"
   }
 }

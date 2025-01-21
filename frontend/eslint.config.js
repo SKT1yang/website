@@ -1,5 +1,3 @@
-import { eslint } from 'code-linter'
+import { eslint } from 'code-linty'
 
-export default eslint([], {
-  vue: true
-})
+export default eslint()

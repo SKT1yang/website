@@ -1,4 +1,4 @@
-import { SparkleIcon as Sparkler, Rocket, Bomb } from "lucide-react";
+import { Bomb, Rocket, SparkleIcon as Sparkler } from "lucide-react";
 
 interface CategoryFilterProps {
   selectedCategory: string | null;

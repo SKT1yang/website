@@ -12,7 +12,7 @@
  * - 路由系统负责页面导航和布局
  */
 import './shared/styles/index.css'
-import { ConfigProvider, App as AntdApp } from 'antd'
+import { App as AntdApp, ConfigProvider } from 'antd'
 import { ErrorBoundary } from 'react-error-boundary'
 import { RootRouterProvider } from '@/entry/router'
 

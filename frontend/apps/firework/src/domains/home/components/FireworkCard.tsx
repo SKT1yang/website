@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Sparkles } from "lucide-react";
 import type { Firework } from "../types";
 import {
-  useCartFireworksDispatch,
   useCartFireworks,
+  useCartFireworksDispatch,
 } from "../../cart/views/CartContext";
 
 type FireworkCardProps = {
@@ -16,7 +16,7 @@ export default function FireworkCard({ firework }: FireworkCardProps) {
   const { id, name, category, description, thumb, imageUrl } = firework;
   const cartDispatch = useCartFireworksDispatch();
   const cartFireworks = useCartFireworks();
-  let quantity = cartFireworks[id]?.quantity;
+  const quantity = cartFireworks[id]?.quantity;
 
   const addToCart = () => {
     cartDispatch({
